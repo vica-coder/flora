@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #222222;
+}
+
+nav {
+    height: 90px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 3;
+    background-color: #EFF8FF;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav button,
+.dream .head button {
+    width: 135px;
+    height: 38px;
+    border-radius: 6px;
+    border: none;
+    background-color: #025595;
+    color: #F5F5F5;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+nav .burger {
+    display: none;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: #EFF8FF;
+    padding-top: 18.7981vh;
+}
+
+.hero .bg-hero {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero h1 {
+    max-width: 549px;
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 700;
+}
+
+.hero p {
+    max-width: 423px;
+    color: #22222280;
+    line-height: 26px;
+    margin: 20px 0 50px 0;
+}
+
+.hero form {
+    max-width: 868px;
+    min-height: 100px;
+    padding: 0 58px;
+    position: relative;
+    z-index: 1;
+    background-color: #FFFFFFCC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.hero form,
+.hero p,
+.hero h1 {
+    margin-left: 70px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero form .item {
+    display: flex;
+    gap: 20px;
+}
+
+.hero .icon {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f6fa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .input {
+    width: 134px;
+}
+
+.hero label {
+    font-weight: 500;
+}
+
+.hero input {
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    background: none;
+    max-width: 100%;
+}
+
+.Works,
+.Trending,
+.Deals {
+    padding: 100px 70px;
+}
+
+.Works h1,
+.dream .head h1,
+.Trending h1,
+.Deals h1 {
+    font-size: 39px;
+    font-weight: 700;
+}
+
+.Works .desc,
+.dream .head .desc,
+.Trending .desc,
+.Deals .desc {
+    color: #22222280;
+    padding: 5px 0 56px 0;
+}
+
+.Works .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Works .card {
+    max-width: 380px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.Works h2 {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 0 10px 0;
+}
+
+.Works .card p {
+    color: #22222280;
+}
+
+.Works .card.active {
+    background-color: #025595;
+}
+
+.Works .card.active h2,
+.Works .card.active p {
+    color: #FFFFFF;
+}
+
+.dream .head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 70px 57px 70px;
+}
+
+.dream .desc {
+    padding-bottom: 0 !important;
+}
+
+.dream .content {
+    position: relative;
+    text-align: right;
+    margin: 0 70px;
+}
+
+.dream .dream-home {
+    width: 77.3060vw;
+    min-width: 900px;
+}
+
+.dream .content .box {
+    max-width: 340px;
+    background-color: #FFFFFFE5;
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.dream .box h2 {
+    margin: 24px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.dream .box .container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 94px;
+}
+
+.dream .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dream .location {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.dream .location p {
+    width: 203px;
+}
+
+.Trending .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.Trending .container .card{
+    width: 382px;
+    background-color: #DDDDDD26;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Trending .trending-image{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.Trending .price{
+    color: #025595;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.Trending h2{
+    width: 180px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.Trending .location{
+    display: flex;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.Deals .filter{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.Deals .filter p{
+    font-size: 18px;
+    font-weight: 600;
+    flex-shrink: 0;
+    padding-bottom: 7px;
+}
+
+.Deals .filter p.active{
+    color: #025595;
+    border-bottom: 2px solid #025595;
+}
+
+.Deals .container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+    flex-wrap: wrap;
+}
+
+.Deals .card{
+    width: 387px;
+    position: relative;
+}
+
+.Deals .card img{
+    width: 100%;
+}
+
+.Deals .card .btns{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    gap: 7px;
+}
+
+.Deals .card button{
+    background-color: #22222266;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+footer{
+    padding: 35px 70px;
+}
+
+footer .top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #2222221A;
+    flex-wrap: wrap;
+}
+
+footer .info{
+    color: #22222280;
+    margin-top: 26px;
+    max-width: 350px;
+}
+
+footer h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer p{
+    margin-top: 16px;
+}
+
+footer .icons{
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+footer .icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #025595;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copyright , footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .copyright{
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    gap: 30px;
+}
+@media screen and (max-width : 992px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav button,
+    nav ul {
+        display: none;
+    }
+
+    nav .burger {
+        display: block;
+    }
+
+    .hero p,
+    .hero h1 {
+        margin-left: 20px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero form {
+        flex-direction: column;
+        gap: 24px;
+        margin-left: 0;
+        padding: 20px 0;
+        max-width: 100vw;
+    }
+
+    .hero .bg-hero {
+        height: 389px;
+    }
+
+    .Works,
+    .dream .head,
+    .Trending,
+    .Deals {
+        padding: 64px 20px;
+    }
+
+    .Works .container {
+        flex-direction: column;
+    }
+
+    .Works .card {
+        max-width: 100%;
+    }
+
+    .dream .head button {
+        display: none;
+    }
+
+    .dream .content {
+        margin: 0;
+    }
+
+    .dream .dream-home,
+    .dream .content .box {
+        width: 100%;
+        min-width: 100%;
+        height: 380px;
+    }
+
+    .dream .content .box {
+        height: 312px;
+        top: 100%;
+        left: 0;
+    }
+
+    .Trending{
+        margin-top: 134px;
+    }
+
+    .Trending .container{
+        justify-content: center;
+    }
+
+    .Deals .container{
+        justify-content: center;
+    }
+
+    footer .top{
+        gap: 30px;
+    }
+}
